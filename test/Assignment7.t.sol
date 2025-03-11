@@ -9,7 +9,9 @@ contract Assignment7Test is Test {
 
     function setUp() public {
         // pass your token name and symbol here
-        assignment = new Assignment7(Dannous,DAN);
+        string memory name="Dannous";
+        string memory symbol="DAN";
+        assignment = new Assignment7(name,symbol);
     }
 
     function testMintAndTransfer() public {
